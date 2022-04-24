@@ -1,0 +1,76 @@
+$first-color: #eef3f6;
+$second-color: #f3f4f9;
+$third-color: #fcf9f4;
+$fourth-color: #d5e2f7;
+$fifth-color: #f7eee1;
+$sixth-color: #f1e7e7;
+$seventh-color: #f3ddef;
+
+.works {
+  margin-top: calc(90px + 100px);
+  // padding-right: 150px;
+  // padding-left: 150px;
+  width: 100%;
+}
+.workSection {
+  display: block;
+  margin-bottom: 100px;
+  text-align: left;
+}
+.projectWrapper:nth-child(even) {
+  justify-content: left;
+}
+.projectWrapper {
+  display: flex;
+  justify-content: right;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+.project {
+  width: 1350px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  border-radius: 15px;
+  background: $third-color;
+}
+.right {
+  justify-content: right;
+}
+.left {
+  justify-content: left;
+}
+.imageContainer {
+  // background:blue;
+  margin-left: 50px;
+}
+.projectImg {
+  max-width: 600px;
+}
+
+.projectDescription {
+  width: 600px;
+  margin-right: 50px;
+  // background:yellow;
+}
+.technologies {
+  list-style: none;
+  display: flex;
+  justify-content: right;
+}
+.technologies li {
+  margin-left: 15px;
+  font-weight: bold;
+}
+.projectText {
+  // width:600px;
+}
+
+.links {
+  text-align: right;
+}
+.linkIcon {
+  margin-left:15px;
+}

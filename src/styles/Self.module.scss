@@ -1,0 +1,89 @@
+.self {
+  display:block;
+  overflow:hidden;
+}
+.selfText{
+  text-align: left;
+  margin:0;
+}
+.selfMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+.selfImageContainer {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+}
+.profileImg {
+  width: 250px;
+  border-radius: 50%;
+}
+.profileContent {
+  width: 800px;
+  height:150px;
+  margin-left: 50px;
+  background: white;
+  padding: 30px;
+  text-align: left;
+  font-weight: 600;
+  font-size:1.2em;
+  position:relative;
+  box-shadow: rgba(17, 12, 46, 0.15) 15px 15px 15px 0px;
+}
+.profileContent:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-right: 10px solid white;
+  border-left: 10px solid transparent;
+  border-top: 10px solid white;
+  border-bottom: 10px solid transparent;
+  left: -20px;
+  top: 6px;
+}
+
+
+//CARDS
+
+.selfCardsContainer {
+  margin-top:100px;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+}
+.selfCard {
+  text-align: left;
+  padding: 35px;
+  width: 325px;
+  height: 350px;
+  // background:blue;
+  margin-right: 20px;
+  margin-left: 20px;
+  border-radius: 10px;
+  // box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+  //   rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.selfCard h3 {
+  font-size: 1.5em;
+  margin-top: 25px;
+}
+.selfCard p {
+  font-size: 1.1em;
+  margin-top: 25px;
+}
+#book {
+  color: #8e8dd9;
+}
+#code {
+  color: #93e7cf;
+}
+#volleyball {
+  color: #f0b57d;
+}

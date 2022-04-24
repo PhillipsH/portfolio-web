@@ -1,38 +1,78 @@
 .App {
   text-align: center;
+  font-family: "Rubik", sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.swiper-button-next,
+.swiper-button-prev{
+  border:none;
+  background:none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#skills{
+  display:flex;
+  justify-content:space-evenly;
+  flex-wrap:wrap;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#skills::-webkit-scrollbar {
+  display: none;
+}
+.box{
+  position:relative;
+  width:200px;
+  margin-left:20px;
+  margin-right:20px;
+  height:300px;
   display: flex;
-  flex-direction: column;
+  /* padding:10px; */
+  align-items:center;
+  flex-direction:column;
+  /* background:#fff; */
+  /* box-shadow: 0 30px 60px rgba(0,0,0,.2); */
+}
+.box .percent{
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+.box .percent svg{
+  /* position:relative;
+  width: 150px;
+  height: 150px; */
+}
+
+.box .percent svg circle{
+  /* width:20px; */
+  fill: none;
+  stroke-width: 8;
+  stroke: #000;
+  transform: translate(5px,5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  stroke-linecap: round;
+}
+.box .percent svg circle:nth-child(1){
+  stroke-dashoffset: 0;
+  stroke:#f3f3f3;
+}
+.box .percent .number{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display:flex;
+  justify-content:center;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color:#999;
+}
+.box .percent .number h2{
+  font-size:3em;
 }
 
-.App-link {
-  color: #61dafb;
+.box .percent .number span{
+  font-size: 24px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.box .text{
+  padding:10px 0 0;
+  color:#999;
+  font-weight:700;
 }

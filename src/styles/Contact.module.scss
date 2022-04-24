@@ -1,0 +1,57 @@
+.contact {
+  margin-top: 90px;
+  // background: black;
+}
+.contactBox {
+  // height:500px;
+  // margin-top: calc(50% - 750px);
+  margin:auto;
+  width:1200px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px 5px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.emailBox {
+  width: 80%;
+  height: 300px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.email {
+  font-size: 3em;
+  font-weight: 600;
+}
+
+.socials {
+  margin-top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  // background:green;
+  margin: auto;
+}
+
+.socialItem {
+  width: 250px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // background: yellow;
+}
+.socialItem :hover {
+  // background: green;
+}
+.copyButton{
+  height:70px;
+  width:120px;
+  border:none;
+  border-radius:5px;
+  background:#6c63ff;
+  color:white;
+  font-size:1.2em;
+}
