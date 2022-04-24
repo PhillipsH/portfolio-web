@@ -6,9 +6,9 @@ import AboutStyle from "../styles/Skills.module.scss";
 const skillsArr = [
   { title: "Java", percentage: "80", color: "#8e8dd9" },
   { title: "Python", percentage: "85", color: "#93e7cf" },
-  { title: "JavaScript/ TypeScript", percentage: "88", color: "#6bd7f4" },
+  { title: "JavaScript/ TypeScript", percentage: "90", color: "#6bd7f4" },
   { title: "HTML/CSS", percentage: "85", color: "#eb6f83" },
-  { title: "SQL", percentage: "75", color: "#f0b57d" },
+  { title: "SQL", percentage: "80", color: "#f0b57d" },
 ];
 
 const Skills = () => {
@@ -16,9 +16,8 @@ const Skills = () => {
     <div className={AboutStyle.skills}>
       <h2>What I Know</h2>
       <p className={AboutStyle.skillsDescription}>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text. Lorem
-        Ipsum is simply dummy text of the printing and typesetting industry.
+        Here are some of the Programming Languages as well as technologies such
+        as Frameworks that I have experience in and can bring to your team.
       </p>
       <div className={AboutStyle.skillsContainer}>
         {skillsArr.map((skill, skillIndex) => {

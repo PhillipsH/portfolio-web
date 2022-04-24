@@ -8,8 +8,9 @@
   grid-row-gap: 30px;
   // background:blue;
   padding: 20px;
-  width: 1700px;
+  width: 80%;
   margin: auto;
+  background:green;
   // box-shadow: rgba(50, 50, 36, 0.1) 100px 50px 300px 50px,
   //   rgba(0, 0, 0, 0.3) -100px -50px 300px -50px;
 }
@@ -34,7 +35,20 @@
 .textItem{
   display:flex;
   align-items: center;
+  
 }
 .textItem * {
   width:350px;
+}
+
+@media only screen and (max-width: 700px) {
+  .experienceContainer{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .experienceContainer{
+    grid-template-columns: 1fr;
+  }
 }

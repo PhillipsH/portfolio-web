@@ -1,13 +1,14 @@
 import ContactStyle from "../styles/Contact.module.scss";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faEnvelope
-} from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import toast, { Toaster } from "react-hot-toast";
 
 const Experience = () => {
+  /*
+  Creates the toast popup whhen users clicks the copy email button.
+  */
   const email = "phillipshalim@gmail.com";
   const notify = () => toast.success("E-mail Copied!");
 
@@ -15,27 +16,27 @@ const Experience = () => {
     <div className={ContactStyle.contact}>
       <div className={ContactStyle.contactBox}>
         <div className={ContactStyle.socials}>
-          <div className={ContactStyle.socialItem}>
+          <a className={ContactStyle.socialItem}href={"https://github.com/phillipsh"}>
             <FontAwesomeIcon
-              id={ContactStyle.book}
+              className={ContactStyle.social}
               icon={faGithub}
               size={"2x"}
             />
-          </div>
-          <div className={ContactStyle.socialItem}>
+          </a>
+          <a className={ContactStyle.socialItem}href={"https://www.linkedin.com/in/phillips-halim/"}>
             <FontAwesomeIcon
-              id={ContactStyle.book}
+              className={ContactStyle.social}
               icon={faLinkedin}
               size={"2x"}
             />
-          </div>
-          <div className={ContactStyle.socialItem}>
+          </a>
+          <a className={ContactStyle.socialItem}href="mailto:phillipshalim@gmail.com">
             <FontAwesomeIcon
-              id={ContactStyle.book}
+              className={ContactStyle.social}
               icon={faEnvelope}
               size={"2x"}
             />
-          </div>
+          </a>
         </div>
         <div className={ContactStyle.emailBox}>
           <div>

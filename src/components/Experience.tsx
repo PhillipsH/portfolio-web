@@ -23,8 +23,8 @@ const Experience = () => {
       <div className={AboutStyle.experienceContainer}>
         <div className={`${AboutStyle.experienceItem} ${AboutStyle.textItem}`}>
           <div>
-            <h3>Checkout all my projects.</h3>
-            <p>Things I've had the enjoyment of making.</p>
+            <h3>Check out all my projects.</h3>
+            <p>Projects I've done and had the enjoyment of making.</p>
           </div>
         </div>
         <div className={AboutStyle.experienceItem}>

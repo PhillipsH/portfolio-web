@@ -13,11 +13,13 @@
   border-radius: 15px;
 }
 .selfImageContainer {
-  height: 300px;
+  min-height: 300px;
   display: flex;
+  flex-wrap:wrap;
   justify-content: center;
   align-items: center;
-  margin-right: 50px;
+  // margin-right: 50px;
+  margin:auto;
 }
 .profileImg {
   width: 250px;
@@ -25,10 +27,10 @@
 }
 .profileContent {
   width: 800px;
-  height:150px;
+  // height:150px;
   margin-left: 50px;
   background: white;
-  padding: 30px;
+  // padding: 3%;
   text-align: left;
   font-weight: 600;
   font-size:1.2em;
@@ -47,13 +49,20 @@
   left: -20px;
   top: 6px;
 }
-
+@media only screen and (max-width: 750px) {
+  .selfCardsContainer{
+    flex-wrap: wrap;
+  }
+  .selfMain{
+    display:block;
+  }
+}
 
 //CARDS
 
 .selfCardsContainer {
   margin-top:100px;
-  height: 450px;
+  min-height: 450px;
   display: flex;
   justify-content: center;
 }
@@ -62,7 +71,6 @@
   padding: 35px;
   width: 325px;
   height: 350px;
-  // background:blue;
   margin-right: 20px;
   margin-left: 20px;
   border-radius: 10px;
@@ -86,4 +94,10 @@
 }
 #volleyball {
   color: #f0b57d;
+}
+
+@media only screen and (max-width: 1000px) {
+  .experienceContainer{
+    grid-template-columns: 1fr;
+  }
 }

@@ -18,7 +18,7 @@ const About = () => {
           </h1>
           <h3>Software Developer</h3>
           <div className={AboutStyle.aboutText}>
-            <p>I'd make a great addition to your team!</p>
+            <p>Lets work together and make a great team!</p>
           </div>
           <div className={AboutStyle.chatButtonContainer}>
             <a className={AboutStyle.chatButton}>Lets Chat!</a>
@@ -43,7 +43,7 @@ const About = () => {
         </div>
         <div className={AboutStyle.thirdSection}>
           <Link to="/works">
-            <Experience></Experience>
+            {/* <Experience></Experience> */}
           </Link>
         </div>
       </div>

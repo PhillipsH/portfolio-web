@@ -5,9 +5,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
 import {
-  faVolleyball,
-  faBook,
-  faCode,
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 
@@ -44,9 +41,9 @@ export const Topbar = () => {
         <Link to="/contact">Contact</Link>
       </div>
       <div className={AboutStyle.socials}>
-        <FontAwesomeIcon id={AboutStyle.book} icon={faGithub} size={"2x"} />
-        <FontAwesomeIcon id={AboutStyle.book} icon={faLinkedin} size={"2x"} />
-        <FontAwesomeIcon id={AboutStyle.book} icon={faEnvelope} size={"2x"} />
+        <a href={"https://github.com/phillipsh"}><FontAwesomeIcon className={AboutStyle.social} icon={faGithub} size={"2x"} /></a>
+        <a href={"https://www.linkedin.com/in/phillips-halim/"}><FontAwesomeIcon className={AboutStyle.social} icon={faLinkedin} size={"2x"} /></a>
+        <a href="mailto:phillipshalim@gmail.com"><FontAwesomeIcon className={AboutStyle.social} icon={faEnvelope} size={"2x"} /></a>
       </div>
     </div>
   );

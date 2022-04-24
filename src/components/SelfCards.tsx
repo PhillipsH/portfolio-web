@@ -11,27 +11,33 @@ const SelfCards = () => {
   return (
     <div className={AboutStyle.selfCardsContainer}>
       <div className={AboutStyle.selfCard}>
-        <FontAwesomeIcon id={AboutStyle.book} icon={faBook} size={"4x"} />
-        <h3>Learn</h3>
+        <FontAwesomeIcon
+          id={AboutStyle.volleyball}
+          icon={faVolleyball}
+          size={"4x"}
+        />
+        <h3>Back-End Development</h3>
         <p>
-          I strive to learn whatever I can whether its new a sport like
-          volleyball, building keyboards or working with a Raspberry Pi.
+          Having done professional and projects with back-end technologies such
+          as Node.js with Express.js I can provide you with my knowledge in
+          these areas. As well as experience in an array of different database.
         </p>
       </div>
       <div className={AboutStyle.selfCard}>
         <FontAwesomeIcon id={AboutStyle.code} icon={faCode} size={"4x"} />
         <h3>Software Development</h3>
         <p>
-          Software Development is my passion, I enjoy creating all kinds of projects and solutions with code. 
+          Software Development is my passion, I enjoy creating all kinds of
+          projects and solutions with code. Creating solutions to your software
+          needs is what I do.
         </p>
       </div>
       <div className={AboutStyle.selfCard}>
-        <FontAwesomeIcon id={AboutStyle.volleyball}icon={faVolleyball} size={"4x"} />
-        <h3>Hobbies or Interests</h3>
+        <FontAwesomeIcon id={AboutStyle.book} icon={faBook} size={"4x"} />
+        <h3>Front-End Development</h3>
         <p>
-          I recently started playing Volleyball its been something I've been
-          having a lot of fun in, its incredibly rewarding when you get in a
-          good rally with each other.
+          With experience in technologies like React, Typescript/Javascript and
+          BootStrap I can create web applications based on any of your needs.
         </p>
       </div>
     </div>

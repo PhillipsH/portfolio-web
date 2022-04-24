@@ -22,8 +22,9 @@ const Self = () => {
           Technology with a Computer Systems Degree as well as taking part time
           software development courses in 2021. I started programming in
           highschool because of a programming course I took and fell in love
-          with it since. I just can't seem to get enough of the logic puzzles and
-          problem-solving software developers face daily.
+          with it since. I just can't seem to get enough of the logic puzzles
+          and problem-solving software developers face daily. A hobby I recently
+          got into is volleyball, I'm not great but it's been a lot of fun.
         </div>
       </div>
     </div>
