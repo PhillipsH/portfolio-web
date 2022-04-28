@@ -6,8 +6,8 @@ import homerbotImg from "../assets/projects/homerbot.png";
 import memoryImg from "../assets/projects/memory-game.png";
 import knowledgeImg from "../assets/projects/knowledge.png";
 import keebieImg from "../assets/projects/keebie-cut.png";
-// import spotifyImg from "../assets/projects/spotify4.png";
-// import spotifyImg from "../assets/projects/spotify4.png";
+import goodstocksImg from "../assets/projects/goodstocks3.png";
+import deviceImg from "../assets/projects/device-timeline2.png";
 
 import {
   faVolleyball,
@@ -23,7 +23,7 @@ const Experience = () => {
       <div className={AboutStyle.experienceContainer}>
         <div className={`${AboutStyle.experienceItem} ${AboutStyle.textItem}`}>
           <div>
-            <h3>Check out all my projects.</h3>
+            <h3>Check out all my work.</h3>
             <p>Projects I've done and had the enjoyment of making.</p>
           </div>
         </div>
@@ -42,8 +42,12 @@ const Experience = () => {
         <div>
           <img className={AboutStyle.projectImg} src={keebieImg}></img>
         </div>
-        <div></div>
-        <div></div>
+        <div>
+          <img className={AboutStyle.projectImg} src={goodstocksImg}></img>
+        </div>
+        <div>
+          <img className={AboutStyle.projectImg} src={deviceImg}></img>
+        </div>
       </div>
     </div>
   );

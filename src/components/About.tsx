@@ -43,7 +43,7 @@ const About = () => {
         </div>
         <div className={AboutStyle.thirdSection}>
           <Link to="/works">
-            {/* <Experience></Experience> */}
+            <Experience></Experience>
           </Link>
         </div>
       </div>

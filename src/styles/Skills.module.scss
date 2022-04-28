@@ -1,110 +1,104 @@
 //SKILS SECTION
-.skills{
-  display:block;
+.skills {
+  display: block;
 }
-.skillsDescription{
-  max-width:640px;
-  margin:auto;
+.skillsDescription {
+  max-width: 640px;
+  margin: auto;
 }
 .skillsContainer {
-  margin-top:50px;
+  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  // background:blue;
 }
-#skills{
-  display:flex;
-  justify-content:space-evenly;
-  flex-wrap:wrap;
+#skills {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 #skills::-webkit-scrollbar {
   display: none;
 }
-.box{
-  position:relative;
-  width:200px;
-  margin-left:20px;
-  margin-right:20px;
-  height:260px;
+.box {
+  position: relative;
+  width: 200px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 260px;
   display: flex;
-  /* padding:10px; */
-  align-items:center;
-  flex-direction:column;
-  /* background:#fff; */
-  /* box-shadow: 0 30px 60px rgba(0,0,0,.2); */
+  align-items: center;
+  flex-direction: column;
 }
-.box .percent{
+.box .percent {
   position: relative;
   width: 150px;
   height: 150px;
 }
-.box .percent svg{
-  /* position:relative;
-  width: 150px;
-  height: 150px; */
+.box .percent svg {
 }
 
-.box .percent svg circle{
+.box .percent svg circle {
   /* width:20px; */
   fill: none;
   stroke-width: 8;
   stroke: #000;
-  transform: translate(5px,5px);
+  transform: translate(5px, 5px);
   stroke-dasharray: 440;
   stroke-dashoffset: 440;
   stroke-linecap: round;
 }
-.box .percent svg circle:nth-child(1){
+.box .percent svg circle:nth-child(1) {
   stroke-dashoffset: 0;
-  stroke:#f3f3f3;
+  stroke: #f3f3f3;
 }
-.box .percent .number{
+.box .percent .number {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  display:flex;
-  justify-content:center;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  color:#999;
+  color: #999;
 }
-.box .percent .number h2{
-  font-size:3em;
+.box .percent .number h2 {
+  font-size: 3em;
 }
 
-.box .percent .number span{
+.box .percent .number span {
   font-size: 24px;
 }
-.box .text{
-  padding:10px 0 0;
-  color:#999;
-  font-weight:700;
-  font-size:1.5em;
+.box .text {
+  padding: 10px 0 0;
+  color: #999;
+  font-weight: 700;
+  font-size: 1.5em;
 }
-
-
 
 // Technologies
 .technologies {
   display: flex;
   justify-content: center;
-  margin-top:175px;
+  margin-top: 175px;
 }
 .technologiesContent {
-  // margin-top:150px;
   display: flex;
   align-items: center;
 }
 .technologiesContainer {
   width: 1200px;
+  width:80%;
   padding: 20px;
-  // margin: auto;
-  // background:#e8eded;
-  // box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px 5px,
-  //   rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   cursor: pointer;
+}
+.swiperContainer {
+}
+.swiperButton {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 .technologyItem {
   height: 200px;
@@ -112,11 +106,8 @@
   background: white;
   border: 3px lightgray solid;
   border-radius: 15px;
-  // margin-right: 110px;
   margin: auto;
   position: relative;
-
-  // margin-right:15px;
 }
 .logoContainer {
   display: flex;
@@ -127,19 +118,44 @@
 .logoImg {
   max-width: 150px;
 }
-.swiperContainer {
-  // width:1400px;
-  // overflow:visible;
+
+@media only screen and (max-width: 1200px) {
+  .technologies{
+    display:block;
+    text-align: center;
+  }
+
+  .technologiesContent{
+    display:block;
+  }
+  .swiperContainer{
+    // width:750;
+  }
 }
-.swiperButton {
-  // border:solid;
-  width: 50px;
-  height: 50px;
-  // background:white;
-  border-radius: 50%;
-  // color:black;
-  // transform:translate(10px)
-  // width:100%;
-  // height:500px;
-  // background:green;
-}
+
+// @media only screen and (max-width: 1000px) {
+//   .technologies{
+//     display:block;
+//     text-align: center;
+//   }
+
+//   .technologiesContainer{
+//     width:300;
+//   }
+//   .swiperContainer{
+//     width:1000;
+//   }
+// }
+// @media only screen and (max-width: 800px) {
+//   .technologies{
+//     display:block;
+//     text-align: center;
+//   }
+
+//   .technologiesContainer{
+//     width:300;
+//   }
+//   .swiperContainer{
+//     width:500;
+//   }
+// }

@@ -6,7 +6,7 @@ $fourth-color: #f0b57d;
 .firstSection {
   background: #f4f6f6;
   padding-left: 5%;
-  padding-right: 150px;
+  padding-right: 5%;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -53,10 +53,7 @@ a:active {
   padding-left: 5%;
   padding-right: 5%;
   align-items: center;
-  // border-bottom: 2px lightgray solid;
   background: url("../assets/circle-scatter-haikei.svg") no-repeat center right;
-  // background:gray;
-  // background:blue;
 }
 .aboutSummary {
   text-align: left;
@@ -64,7 +61,6 @@ a:active {
 }
 .aboutSummary h1 {
   font-size: 4em;
-  // background:green;
 }
 .aboutImage {
   display: block;
@@ -74,7 +70,6 @@ a:active {
 }
 .aboutText {
   text-align: left;
-  // width:500px;
 }
 
 .topbar {
@@ -86,7 +81,6 @@ a:active {
   justify-content: space-between;
   padding: 10px;
   background: white;
-  // border-bottom: 3px gray solid;
   z-index: 10;
 }
 .noShowBar {

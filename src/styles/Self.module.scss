@@ -1,10 +1,8 @@
 .self {
-  display:block;
-  overflow:hidden;
 }
-.selfText{
+.selfText {
   text-align: left;
-  margin:0;
+  margin: 0;
 }
 .selfMain {
   display: flex;
@@ -15,11 +13,9 @@
 .selfImageContainer {
   min-height: 300px;
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  // margin-right: 50px;
-  margin:auto;
 }
 .profileImg {
   width: 250px;
@@ -33,9 +29,10 @@
   // padding: 3%;
   text-align: left;
   font-weight: 600;
-  font-size:1.2em;
-  position:relative;
+  font-size: 1.2em;
+  position: relative;
   box-shadow: rgba(17, 12, 46, 0.15) 15px 15px 15px 0px;
+  padding: 15px;
 }
 .profileContent:before {
   content: "";
@@ -49,19 +46,12 @@
   left: -20px;
   top: 6px;
 }
-@media only screen and (max-width: 750px) {
-  .selfCardsContainer{
-    flex-wrap: wrap;
-  }
-  .selfMain{
-    display:block;
-  }
-}
 
 //CARDS
 
 .selfCardsContainer {
-  margin-top:100px;
+  // background:blue;
+  margin-top: 100px;
   min-height: 450px;
   display: flex;
   justify-content: center;
@@ -96,8 +86,29 @@
   color: #f0b57d;
 }
 
+@media only screen and (max-width: 750px) {
+  .self{
+    overflow: hidden;
+  }
+  .selfMain {
+    display: block;
+  }
+  .profileContent {
+    width: 80%;
+  }
+  .selfCard {
+    width: 80%;
+  }
+}
+
 @media only screen and (max-width: 1000px) {
-  .experienceContainer{
-    grid-template-columns: 1fr;
+  .selfCardsContainer {
+    // flex-wrap: wrap;
+    display: block;
+    // background: Blue;
+  }
+  .selfCard {
+    margin: auto;
+    overflow:hidden;
   }
 }

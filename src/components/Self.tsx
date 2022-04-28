@@ -24,7 +24,7 @@ const Self = () => {
           highschool because of a programming course I took and fell in love
           with it since. I just can't seem to get enough of the logic puzzles
           and problem-solving software developers face daily. A hobby I recently
-          got into is volleyball, I'm not great but it's been a lot of fun.
+          got into is volleyball; I'm not great but it's been a lot of fun.
         </div>
       </div>
     </div>

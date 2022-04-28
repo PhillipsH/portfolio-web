@@ -12,27 +12,26 @@ $seventh-color: #f3ddef;
   // padding-left: 150px;
   width: 100%;
 }
-.workSection {
-  display: block;
-  margin-bottom: 100px;
-  text-align: left;
-}
+
 .projectWrapper:nth-child(even) {
   justify-content: left;
 }
 .projectWrapper {
   display: flex;
   justify-content: right;
-  margin-left: 150px;
-  margin-right: 150px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 100px;
+  text-align: left;
 }
 .project {
-  width: 1350px;
-  height: 500px;
+  width: 100%;
+  background: green;
+  // width: 1350px;
+  min-height: 500px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: auto;
   border-radius: 15px;
   background: $third-color;
 }
@@ -44,6 +43,7 @@ $seventh-color: #f3ddef;
 }
 .imageContainer {
   // background:blue;
+  margin-right: 15px;
   margin-left: 50px;
 }
 .projectImg {
@@ -51,8 +51,9 @@ $seventh-color: #f3ddef;
 }
 
 .projectDescription {
-  width: 600px;
+  max-width: 600px;
   margin-right: 50px;
+  margin-left: 15px;
   // background:yellow;
 }
 .technologies {
@@ -72,5 +73,27 @@ $seventh-color: #f3ddef;
   text-align: right;
 }
 .linkIcon {
-  margin-left:15px;
+  margin-left: 15px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .projectWrapper {
+    display: block;
+    justify-content: right;
+    // margin:0;
+    // text-align:center;
+  }
+  .project {
+    display: block;
+  }
+  .projectDescription {
+    margin: auto;
+  }
+  .imageContainer {
+    display: flex;
+    justify-content: center;
+  }
+  .projectImg {
+    margin: auto;
+  }
 }

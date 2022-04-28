@@ -22,10 +22,31 @@ const Technologies = () => {
       </div>
       <div className={AboutStyle.technologiesContainer}>
         <Swiper
+          breakpoints={{
+            // 1300: {
+            //   slidesPerView: 5,
+            // },
+            // 1250: {
+            //   slidesPerView: 4,
+            // },
+            1800: {
+              slidesPerView: 5,
+            },
+            1500: {
+              slidesPerView: 4,
+            },
+            1200: {
+              slidesPerView: 3,
+            },
+            800: {
+              slidesPerView: 2,
+            },
+            600: {
+              slidesPerView: 1,
+            },
+          }}
           className={AboutStyle.swiperContainer}
-          // spaceBetween={2}
-          // justifyContent={"center"}
-          slidesPerView={5}
+          slidesPerView={1}
           onSlideChange={() => console.log("slide change")}
           onSwiper={(swiper) => console.log(swiper)}
         >
